@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .wrap-up{
+    width: 700px;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: white;
+}
+
+.container .wrap-up .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .wrap-up .header .seperator{
+    padding: 20px;
+    background: red;
+    visibility: hidden;
+}
+
+.wrap-up .header .authentication{
+    display: flex;
+    gap: 20px;
+
+}
+
+.wrap-up .header .authentication .form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-up .header .authentication .form i{
+    font-size: 25px;
+}
+
+.wrap-up .header .authentication .form button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px black;  
+    cursor: pointer;
+}
+
+.wrap-up form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-up form .input-tab{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.wrap-up form .input-tab input{
+    width: 100%;
+    height: 10px;
+    border-radius: 7px;
+    border: 2px solid slategray;
+    outline: none;
+    padding: 20px;
+}
+
+.container form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+
+}
+
+.container form .btn button{
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px black;  
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .container .wrap-up .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    .container .wrap-up{
+        width: 350px;
+    }
+
+    .container .wrap-up .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap-up form .input-tab{
+        width: 80%;
+    }
+
+    
+.wrap-up .header .authentication{
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    align-items: center;
+}
+    
+    
+}
