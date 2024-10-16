@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrap-up">
+            <div class="header">
+                <div class="logo">
+                    <img src="./img/icct logop.png" alt="">
+                </div>
+            </div>
+
+            <form>
+                <div class="input-tab">
+                    <input id="email" type="text" placeholder="Enter your Email">
+                    <div id="email-error" class="error-tab"></div>
+                </div>
+
+                <div class="input-tab">
+                    <input id="password" type="password" placeholder="Enter your Password">
+                    <i id="lock-password" class='bx bxs-lock'></i>
+                    <div id="password-error" class="error-tab"></div>
+                </div>
+
+                <div class="btn-form">
+                    <input id="submit-btn" type="submit" value="Submit">
+                    <div id="submit-error" class="error-tab"></div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
